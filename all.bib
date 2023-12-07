@@ -742,55 +742,51 @@
   language = "en"
 }
 
-@ARTICLE{Dauparas2022-nj,
-  title    = "Robust deep learning--based protein sequence design using
-              {ProteinMPNN}",
-  author   = "Dauparas, J and Anishchenko, I and Bennett, N and Bai, H and
-              Ragotte, R J and Milles, L F and Wicky, B I M and Courbet, A and
-              de Haas, R J and Bethel, N and Leung, P J Y and Huddy, T F and
-              Pellock, S and Tischer, D and Chan, F and Koepnick, B and Nguyen,
-              H and Kang, A and Sankaran, B and Bera, A K and King, N P and
-              Baker, D",
-  abstract = "Although deep learning has revolutionized protein structure
-              prediction, almost all experimentally characterized de novo
-              protein designs have been generated using physically based
-              approaches such as Rosetta. Here, we describe a deep
-              learning--based protein sequence design method, ProteinMPNN, that
-              has outstanding performance in both in silico and experimental
-              tests. On native protein backbones, ProteinMPNN has a sequence
-              recovery of 52.4\% compared with 32.9\% for Rosetta. The amino
-              acid sequence at different positions can be coupled between
-              single or multiple chains, enabling application to a wide range
-              of current protein design challenges. We demonstrate the broad
-              utility and high accuracy of ProteinMPNN using x-ray
-              crystallography, cryo--electron microscopy, and functional
-              studies by rescuing previously failed designs, which were made
-              using Rosetta or AlphaFold, of protein monomers, cyclic
-              homo-oligomers, tetrahedral nanoparticles, and target-binding
-              proteins. Deep learning approaches such as Alphafold and
-              Rosettafold have made reliable protein structure prediction
-              broadly accessible. For the inverse problem, finding a sequence
-              that folds to a desired structure, most approaches remain based
-              on energy optimization. In two papers, a range of protein design
-              problems were addressed through deep learning methods. Dauparas
-              et al. built on recent deep learning protein design approaches to
-              develop a method called ProteinMPNN. They validated designs
-              experimentally and showed that ProteinMPNN can rescue previously
-              failed designs made using Rosetta or Alphafold. Wicky et al.
-              started from a random sequence and used Monte Carlo sequence
-              search coupled with structure prediction by Alphafold to design
-              cyclic homo-oligomers. Although the designs were generated to
-              achieve stable expression, the sequences had to be regenerated
-              using ProteinMPNN. This approach allowed for the design of a
-              range of experimentally validated cyclic oligomers and paves the
-              way for the design of increasingly complex assemblies. ---VV A
-              network-based protein design enables the generation of cyclic
-              homo-oligomers across the nanoscopic scale.",
-  journal  = "Science",
-  volume   =  378,
-  number   =  6615,
-  pages    = "49--56",
-  year     =  2022
+@ARTICLE{Ferruz2023-cw,
+  title     = "From sequence to function through structure: Deep learning for
+               protein design",
+  author    = "Ferruz, Noelia and Heinzinger, Michael and Akdel, Mehmet and
+               Goncearenco, Alexander and Naef, Luca and Dallago, Christian",
+  abstract  = "The process of designing biomolecules, in particular proteins,
+               is witnessing a rapid change in available tooling and
+               approaches, moving from design through physicochemical force
+               fields, to producing plausible, complex sequences fast via
+               end-to-end differentiable statistical models. To achieve
+               conditional and controllable protein design, researchers at the
+               interface of artificial intelligence and biology leverage
+               advances in natural language processing (NLP) and computer
+               vision techniques, coupled with advances in computing hardware
+               to learn patterns from growing biological databases, curated
+               annotations thereof, or both. Once learned, these patterns can
+               be used to provide novel insights into mechanistic biology and
+               the design of biomolecules. However, navigating and
+               understanding the practical applications for the many recent
+               protein design tools is complex. To facilitate this, we 1)
+               document recent advances in deep learning (DL) assisted protein
+               design from the last three years, 2) present a practical
+               pipeline that allows to go from de novo-generated sequences to
+               their predicted properties and web-powered visualization within
+               minutes, and 3) leverage it to suggest a generated protein
+               sequence which might be used to engineer a biosynthetic gene
+               cluster to produce a molecular glue-like compound. Lastly, we
+               discuss challenges and highlight opportunities for the protein
+               design field.",
+  journal   = "Comput. Struct. Biotechnol. J.",
+  publisher = "Elsevier",
+  volume    =  21,
+  pages     = "238--250",
+  year      =  2023,
+  keywords  = "ADMM, Alternating Direction Method of Multipliers; CNN,
+               Convolutional Neural Network; DL, Deep learning; Deep learning;
+               Drug discovery; FNN, fully-connected neural network; GAN,
+               Generative Adversarial Network; GCN, Graph Convolutional
+               Network; GNN, Graph Neural Network; GO, Gene Ontology; GVP,
+               Geometric Vector Perceptron; LSTM, Long-Short Term Memory; MLP,
+               Multilayer Perceptron; MSA, Multiple Sequence Alignment; NLP,
+               Natural Language Processing; NSR, Natural Sequence Recovery;
+               Protein design; Protein language models; Protein prediction;
+               VAE, Variational Autoencoder; pLM, protein Language Model",
+  language  = "en"
 }
 
 @MISC{noauthor_undated-yf,
@@ -3911,6 +3907,57 @@
   keywords = "U2OS cells; Z-VAD-fmk; antimycin A; menadione; mitochondrial
               membrane permeabilization; rotenone",
   language = "en"
+}
+
+@ARTICLE{Dauparas2022-nj,
+  title    = "Robust deep learning--based protein sequence design using
+              {ProteinMPNN}",
+  author   = "Dauparas, J and Anishchenko, I and Bennett, N and Bai, H and
+              Ragotte, R J and Milles, L F and Wicky, B I M and Courbet, A and
+              de Haas, R J and Bethel, N and Leung, P J Y and Huddy, T F and
+              Pellock, S and Tischer, D and Chan, F and Koepnick, B and Nguyen,
+              H and Kang, A and Sankaran, B and Bera, A K and King, N P and
+              Baker, D",
+  abstract = "Although deep learning has revolutionized protein structure
+              prediction, almost all experimentally characterized de novo
+              protein designs have been generated using physically based
+              approaches such as Rosetta. Here, we describe a deep
+              learning--based protein sequence design method, ProteinMPNN, that
+              has outstanding performance in both in silico and experimental
+              tests. On native protein backbones, ProteinMPNN has a sequence
+              recovery of 52.4\% compared with 32.9\% for Rosetta. The amino
+              acid sequence at different positions can be coupled between
+              single or multiple chains, enabling application to a wide range
+              of current protein design challenges. We demonstrate the broad
+              utility and high accuracy of ProteinMPNN using x-ray
+              crystallography, cryo--electron microscopy, and functional
+              studies by rescuing previously failed designs, which were made
+              using Rosetta or AlphaFold, of protein monomers, cyclic
+              homo-oligomers, tetrahedral nanoparticles, and target-binding
+              proteins. Deep learning approaches such as Alphafold and
+              Rosettafold have made reliable protein structure prediction
+              broadly accessible. For the inverse problem, finding a sequence
+              that folds to a desired structure, most approaches remain based
+              on energy optimization. In two papers, a range of protein design
+              problems were addressed through deep learning methods. Dauparas
+              et al. built on recent deep learning protein design approaches to
+              develop a method called ProteinMPNN. They validated designs
+              experimentally and showed that ProteinMPNN can rescue previously
+              failed designs made using Rosetta or Alphafold. Wicky et al.
+              started from a random sequence and used Monte Carlo sequence
+              search coupled with structure prediction by Alphafold to design
+              cyclic homo-oligomers. Although the designs were generated to
+              achieve stable expression, the sequences had to be regenerated
+              using ProteinMPNN. This approach allowed for the design of a
+              range of experimentally validated cyclic oligomers and paves the
+              way for the design of increasingly complex assemblies. ---VV A
+              network-based protein design enables the generation of cyclic
+              homo-oligomers across the nanoscopic scale.",
+  journal  = "Science",
+  volume   =  378,
+  number   =  6615,
+  pages    = "49--56",
+  year     =  2022
 }
 
 @ARTICLE{Dellago2013-mv,
