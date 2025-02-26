@@ -2491,44 +2491,35 @@
   title = "({PDF}) Protein Crystallography"
 }
 
-@ARTICLE{Pietrek2020-av,
-  title     = "Hierarchical ensembles of intrinsically disordered proteins at
-               atomic resolution in molecular dynamics simulations",
-  author    = "Pietrek, Lisa M and Stelzl, Lukas S and Hummer, Gerhard",
-  journal   = "J. Chem. Theory Comput.",
-  publisher = "American Chemical Society (ACS)",
-  volume    =  16,
-  number    =  1,
-  pages     = "725--737",
-  abstract  = "Intrinsically disordered proteins (IDPs) constitute a large
-               fraction of the human proteome and are critical in the regulation
-               of cellular processes. A detailed understanding of the
-               conformational dynamics of IDPs could help to elucidate their
-               roles in health and disease. However, the inherent flexibility of
-               IDPs makes structural studies and their interpretation
-               challenging. Molecular dynamics (MD) simulations could address
-               this challenge in principle, but inaccuracies in the simulation
-               models and the need for long simulations have stymied progress.
-               To overcome these limitations, we adopt a hierarchical approach
-               that builds on the ``flexible-meccano'' model reported by Bernadó
-               et al. (J. Am. Chem. Soc. 2005, 127, 17968-17969). First, we
-               exhaustively sample small IDP fragments in all-atom simulations
-               to capture their local structures. Then, we assemble the
-               fragments into full-length IDPs to explore the stereochemically
-               possible global structures of IDPs. The resulting ensembles of
-               three-dimensional structures of full-length IDPs are highly
-               diverse, much more so than in standard MD simulation. For the
-               paradigmatic IDP α-synuclein, our ensemble captures both the
-               local structure, as probed by nuclear magnetic resonance
-               spectroscopy, and its overall dimension, as obtained from
-               small-angle X-ray scattering in solution. By generating
-               representative and meaningful starting ensembles, we can begin to
-               exploit the massive parallelism afforded by current and future
-               high-performance computing resources for atomic-resolution
-               characterization of IDPs.",
-  month     =  jan,
-  year      =  2020,
-  language  = "en"
+@ARTICLE{Jing2024-dd,
+  title         = "Generative modeling of molecular dynamics trajectories",
+  author        = "Jing, Bowen and Stärk, Hannes and Jaakkola, Tommi and Berger,
+                   Bonnie",
+  journal       = "arXiv [q-bio.BM]",
+  abstract      = "Molecular dynamics (MD) is a powerful technique for studying
+                   microscopic phenomena, but its computational cost has driven
+                   significant interest in the development of deep
+                   learning-based surrogate models. We introduce generative
+                   modeling of molecular trajectories as a paradigm for learning
+                   flexible multi-task surrogate models of MD from data. By
+                   conditioning on appropriately chosen frames of the
+                   trajectory, we show such generative models can be adapted to
+                   diverse tasks such as forward simulation, transition path
+                   sampling, and trajectory upsampling. By alternatively
+                   conditioning on part of the molecular system and inpainting
+                   the rest, we also demonstrate the first steps towards
+                   dynamics-conditioned molecular design. We validate the full
+                   set of these capabilities on tetrapeptide simulations and
+                   show that our model can produce reasonable ensembles of
+                   protein monomers. Altogether, our work illustrates how
+                   generative modeling can unlock value from MD data towards
+                   diverse downstream tasks that are not straightforward to
+                   address with existing methods or even MD itself. Code is
+                   available at https://github.com/bjing2016/mdgen.",
+  month         =  sep,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "q-bio.BM"
 }
 
 @ARTICLE{Ikebe2016-sg,
@@ -12872,4 +12863,44 @@
   month    =  jun,
   year     =  2002,
   language = "en"
+}
+
+@ARTICLE{Pietrek2020-av,
+  title     = "Hierarchical ensembles of intrinsically disordered proteins at
+               atomic resolution in molecular dynamics simulations",
+  author    = "Pietrek, Lisa M and Stelzl, Lukas S and Hummer, Gerhard",
+  journal   = "J. Chem. Theory Comput.",
+  publisher = "American Chemical Society (ACS)",
+  volume    =  16,
+  number    =  1,
+  pages     = "725--737",
+  abstract  = "Intrinsically disordered proteins (IDPs) constitute a large
+               fraction of the human proteome and are critical in the regulation
+               of cellular processes. A detailed understanding of the
+               conformational dynamics of IDPs could help to elucidate their
+               roles in health and disease. However, the inherent flexibility of
+               IDPs makes structural studies and their interpretation
+               challenging. Molecular dynamics (MD) simulations could address
+               this challenge in principle, but inaccuracies in the simulation
+               models and the need for long simulations have stymied progress.
+               To overcome these limitations, we adopt a hierarchical approach
+               that builds on the ``flexible-meccano'' model reported by Bernadó
+               et al. (J. Am. Chem. Soc. 2005, 127, 17968-17969). First, we
+               exhaustively sample small IDP fragments in all-atom simulations
+               to capture their local structures. Then, we assemble the
+               fragments into full-length IDPs to explore the stereochemically
+               possible global structures of IDPs. The resulting ensembles of
+               three-dimensional structures of full-length IDPs are highly
+               diverse, much more so than in standard MD simulation. For the
+               paradigmatic IDP α-synuclein, our ensemble captures both the
+               local structure, as probed by nuclear magnetic resonance
+               spectroscopy, and its overall dimension, as obtained from
+               small-angle X-ray scattering in solution. By generating
+               representative and meaningful starting ensembles, we can begin to
+               exploit the massive parallelism afforded by current and future
+               high-performance computing resources for atomic-resolution
+               characterization of IDPs.",
+  month     =  jan,
+  year      =  2020,
+  language  = "en"
 }
