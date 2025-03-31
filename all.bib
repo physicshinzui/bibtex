@@ -13205,3 +13205,55 @@
                   binding to such sites.},
   language     = {en}
 }
+
+@ARTICLE{Skrhak2024-ot,
+  title        = {{CryptoBench}: cryptic protein-ligand binding sites dataset
+                  and benchmark},
+  author       = {Škrhák, Vít and Novotný, Marian and Feidakis, Christos P and
+                  Krivák, Radoslav and Hoksza, David},
+  journaltitle = {Bioinformatics},
+  publisher    = {Oxford University Press (OUP)},
+  volume       = {41},
+  issue        = {1},
+  date         = {2024-12-26},
+  abstract     = {MOTIVATION: Structure-based methods for detecting
+                  protein-ligand binding sites play a crucial role in various
+                  domains, from fundamental research to biomedical applications.
+                  However, current prediction methodologies often rely on holo
+                  (ligand-bound) protein conformations for training and
+                  evaluation, overlooking the significance of the apo
+                  (ligand-free) states. This oversight is particularly
+                  problematic in the case of cryptic binding sites (CBSs) where
+                  holo-based assessment yields unrealistic performance
+                  expectations. RESULTS: To advance the development in this
+                  domain, we introduce CryptoBench, a benchmark dataset tailored
+                  for training and evaluating novel CBS prediction
+                  methodologies. CryptoBench is constructed upon a large
+                  collection of apo-holo protein pairs, grouped by UniProtID,
+                  clustered by sequence identity, and filtered to contain only
+                  structures with substantial structural change in the binding
+                  site. CryptoBench comprises 1107 structures with predefined
+                  cross-validation splits, making it the most extensive CBS
+                  dataset to date. To establish a performance baseline, we
+                  measured the predictive power of sequence- and structure-based
+                  CBS residue prediction methods using the benchmark. We
+                  selected PocketMiner as the state-of-the-art representative of
+                  the structure-based methods for CBS detection, and P2Rank, a
+                  widely-used structure-based method for general binding site
+                  prediction that is not specifically tailored for cryptic
+                  sites. For sequence-based approaches, we trained a neural
+                  network to classify binding residues using protein language
+                  model embeddings. Our sequence-based approach outperformed
+                  PocketMiner and P2Rank across key metrics, including area
+                  under the curve, area under the precision-recall curve,
+                  Matthew's correlation coefficient, and F1 scores. These
+                  results provide baseline benchmark results for future CBS and
+                  potentially also non-CBS prediction endeavors, leveraging
+                  CryptoBench as the foundational platform for further
+                  advancements in the field. AVAILABILITY AND IMPLEMENTATION:
+                  The CryptoBench dataset, including the benchmark model, is
+                  available on Open Science Framework-https://osf.io/pz4a9/. The
+                  code and tutorial are available at the GitHub
+                  repository-https://github.com/skrhakv/CryptoBench/.},
+  language     = {en}
+}
