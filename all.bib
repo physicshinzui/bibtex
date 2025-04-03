@@ -4005,35 +4005,35 @@
   language     = {en}
 }
 
-@INPROCEEDINGS{Sohl-Dickstein2015-ti,
-  title     = {Deep Unsupervised Learning using Nonequilibrium Thermodynamics},
-  author    = {Sohl-Dickstein, Jascha and Weiss, Eric and Maheswaranathan, Niru
-               and Ganguli, Surya},
-  editor    = {Bach, Francis and Blei, David},
-  booktitle = {Proceedings of the 32nd International Conference on Machine
-               Learning},
-  publisher = {PMLR},
-  location  = {Lille, France},
-  volume    = {37},
-  pages     = {2256--2265},
-  date      = {2015},
-  abstract  = {A central problem in machine learning involves modeling complex
-               data-sets using highly flexible families of probability
-               distributions in which learning, sampling, inference, and
-               evaluation are still analytically or computationally tractable.
-               Here, we develop an approach that simultaneously achieves both
-               flexibility and tractability. The essential idea, inspired by
-               non-equilibrium statistical physics, is to systematically and
-               slowly destroy structure in a data distribution through an
-               iterative forward diffusion process. We then learn a reverse
-               diffusion process that restores structure in data, yielding a
-               highly flexible and tractable generative model of the data. This
-               approach allows us to rapidly learn, sample from, and evaluate
-               probabilities in deep generative models with thousands of layers
-               or time steps, as well as to compute conditional and posterior
-               probabilities under the learned model. We additionally release an
-               open source reference implementation of the algorithm.},
-  series    = {Proceedings of Machine Learning Research}
+@ARTICLE{Sohl-Dickstein2015-ti,
+  title        = {Deep Unsupervised Learning using Nonequilibrium Thermodynamics},
+  author       = {Sohl-Dickstein, Jascha Narain and Weiss, Eric A and
+                  Maheswaranathan, Niru and Ganguli, S},
+  editor       = {Bach, Francis and Blei, David},
+  journaltitle = {ICML},
+  publisher    = {PMLR},
+  location     = {Lille, France},
+  volume       = {abs/1503.03585},
+  pages        = {2256--2265},
+  date         = {2015-03-11},
+  abstract     = {A central problem in machine learning involves modeling
+                  complex data-sets using highly flexible families of
+                  probability distributions in which learning, sampling,
+                  inference, and evaluation are still analytically or
+                  computationally tractable. Here, we develop an approach that
+                  simultaneously achieves both flexibility and tractability. The
+                  essential idea, inspired by non-equilibrium statistical
+                  physics, is to systematically and slowly destroy structure in
+                  a data distribution through an iterative forward diffusion
+                  process. We then learn a reverse diffusion process that
+                  restores structure in data, yielding a highly flexible and
+                  tractable generative model of the data. This approach allows
+                  us to rapidly learn, sample from, and evaluate probabilities
+                  in deep generative models with thousands of layers or time
+                  steps, as well as to compute conditional and posterior
+                  probabilities under the learned model. We additionally release
+                  an open source reference implementation of the algorithm.},
+  series       = {Proceedings of Machine Learning Research}
 }
 
 @ARTICLE{Unke2024-zy,
@@ -9742,13 +9742,12 @@
   language     = {en}
 }
 
-@INPROCEEDINGS{Welling2011-kj,
-  title     = {Bayesian learning via stochastic gradient Langevin dynamics},
-  author    = {Welling, Max and Teh, Yee W},
-  booktitle = {Proceedings of the 28th international conference on machine
-               learning (ICML-11)},
-  pages     = {681--688},
-  date      = {2011}
+@ARTICLE{Welling2011-kj,
+  title        = {Bayesian learning via stochastic gradient Langevin dynamics},
+  author       = {Welling, M and Teh, Y},
+  journaltitle = {ICML},
+  pages        = {681--688},
+  date         = {2011-06-28}
 }
 
 @ARTICLE{Kirkwood1935-qd,
@@ -10978,7 +10977,7 @@
 }
 
 @ARTICLE{Simm2019-ut,
-  title        = {A Generative Model for Molecular Distance Geometry},
+  title        = {A generative model for molecular distance geometry},
   author       = {Simm, Gregor N C and Hernández-Lobato, José Miguel},
   journaltitle = {arXiv [stat.ML]},
   date         = {2019-09-25},
@@ -11000,8 +10999,8 @@
 }
 
 @ARTICLE{Xu2022-gu,
-  title        = {{GeoDiff}: a Geometric Diffusion Model for Molecular
-                  Conformation Generation},
+  title        = {{GeoDiff}: A geometric diffusion model for molecular
+                  conformation generation},
   author       = {Xu, Minkai and Yu, Lantao and Song, Yang and Shi, Chence and
                   Ermon, Stefano and Tang, Jian},
   journaltitle = {arXiv [cs.LG]},
@@ -11035,8 +11034,8 @@
 }
 
 @ARTICLE{Klein2023-ps,
-  title        = {Timewarp: Transferable Acceleration of Molecular Dynamics by
-                  Learning Time-Coarsened Dynamics},
+  title        = {Timewarp: Transferable acceleration of molecular dynamics by
+                  learning time-coarsened dynamics},
   author       = {Klein, Leon and Foong, Andrew Y K and Fjelde, Tor Erlend and
                   Mlodozeniec, Bruno and Brockschmidt, Marc and Nowozin,
                   Sebastian and Noé, Frank and Tomioka, Ryota},
@@ -11046,7 +11045,7 @@
   eprintclass  = {stat.ML},
   abstract     = {Molecular dynamics (MD) simulation is a widely used technique
                   to simulate molecular systems, most commonly at the all-atom
-                  resolution where the equations of motion are integrated with
+                  resolution where equations of motion are integrated with
                   timesteps on the order of femtoseconds
                   ($1\textrm{fs}=10^{-15}\textrm{s}$). MD is often used to
                   compute equilibrium properties, which requires sampling from
@@ -11054,25 +11053,25 @@
                   distribution. However, many important processes, such as
                   binding and folding, occur over timescales of milliseconds or
                   beyond, and cannot be efficiently sampled with conventional
-                  MD. Furthermore, new MD simulations need to be performed from
-                  scratch for each molecular system studied. We present
-                  Timewarp, an enhanced sampling method which uses a normalising
-                  flow as a proposal distribution in a Markov chain Monte Carlo
-                  method targeting the Boltzmann distribution. The flow is
-                  trained offline on MD trajectories and learns to make large
-                  steps in time, simulating the molecular dynamics of $10^{5} -
+                  MD. Furthermore, new MD simulations need to be performed for
+                  each molecular system studied. We present Timewarp, an
+                  enhanced sampling method which uses a normalising flow as a
+                  proposal distribution in a Markov chain Monte Carlo method
+                  targeting the Boltzmann distribution. The flow is trained
+                  offline on MD trajectories and learns to make large steps in
+                  time, simulating the molecular dynamics of $10^{5} -
                   10^{6}\:\textrm{fs}$. Crucially, Timewarp is transferable
                   between molecular systems: once trained, we show that it
-                  generalises to unseen small peptides (2-4 amino acids),
-                  exploring their metastable states and providing wall-clock
-                  acceleration when sampling compared to standard MD. Our method
-                  constitutes an important step towards developing general,
-                  transferable algorithms for accelerating MD.}
+                  generalises to unseen small peptides (2-4 amino acids) at
+                  all-atom resolution, exploring their metastable states and
+                  providing wall-clock acceleration of sampling compared to
+                  standard MD. Our method constitutes an important step towards
+                  general, transferable algorithms for accelerating MD.}
 }
 
 @ARTICLE{Wu2022-an,
-  title        = {{DiffMD}: A Geometric Diffusion Model for Molecular Dynamics
-                  Simulations},
+  title        = {{DiffMD}: A geometric diffusion model for molecular dynamics
+                  simulations},
   author       = {Wu, Fang and Li, Stan Z},
   journaltitle = {arXiv [cs.CE]},
   date         = {2022-04-19},
